@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.login.LoginFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/login_button_fragment_login"
+        android:layout_width="212dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/login_string_fragment_login"
+        app:layout_constraintEnd_toEndOf="@+id/register_button_fragment_login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/register_button_fragment_login"
+        app:layout_constraintTop_toBottomOf="@+id/register_button_fragment_login" />
+
+    <EditText
+        android:id="@+id/password_edittext_fragment_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_textview_fragment_login" />
+
+    <TextView
+        android:id="@+id/password_textview_fragment_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/password_string_fragment_login"
+        app:layout_constraintEnd_toEndOf="@+id/email_edittext_fragment_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_edittext_fragment_login"
+        app:layout_constraintTop_toBottomOf="@+id/email_edittext_fragment_login" />
+
+    <TextView
+        android:id="@+id/email_textview_fragment_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="@string/email_string_fragment_login"
+        app:layout_constraintEnd_toEndOf="@+id/email_edittext_fragment_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_edittext_fragment_login"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_edittext_fragment_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_textview_fragment_login" />
+
+    <Button
+        android:id="@+id/register_button_fragment_login"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/register_string_fragment_login"
+        app:layout_constraintEnd_toEndOf="@+id/password_edittext_fragment_login"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/password_edittext_fragment_login"
+        app:layout_constraintTop_toBottomOf="@+id/password_edittext_fragment_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
